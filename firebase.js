@@ -1,14 +1,13 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyAI1brKkR9XfOGErHdMQKyfj8GQbKR7tXA",
-    authDomain: "to-do-list-519ae.firebaseapp.com",
-    projectId: "to-do-list-519ae",
-    storageBucket: "to-do-list-519ae.appspot.com",
-    messagingSenderId: "897143349984",
-    appId: "1:897143349984:web:e23f665d2848abc8fa2685",
-    measurementId: "G-N6YDZCPM2S"
-};
-
+const firebaseConfig = {
+    apiKey: "AIzaSyDNpNvzXgKCgLBx-2TPywPNhufAnhjDYPA",
+    authDomain: "shopping-web-dd2d0.firebaseapp.com",
+    projectId: "shopping-web-dd2d0",
+    storageBucket: "shopping-web-dd2d0.appspot.com",
+    messagingSenderId: "166766910230",
+    appId: "1:166766910230:web:82381c5ccf3c4680708e37",
+    measurementId: "G-DSMJPJZ5BE"
+  };
+  // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-var db = firebase.firestore();
-console.log("Hello")
+const db = firebase.firestore();
