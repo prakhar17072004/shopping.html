@@ -40,7 +40,7 @@ nav ul li{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 150px 150px 150px;
-    margin-bottom:50px;
+    
     
 }
 .title{
@@ -120,4 +120,5 @@ margin-top: 50px;
   
   body{
     background-color:aqua;
+      margin-bottom:50px;
   }
