@@ -32,7 +32,7 @@ function generateItems(items){
         
     })
 document.querySelector(".card1").innerHTML=itemsHMTL;
-    createEventListeners();
+   
 }
 
    
