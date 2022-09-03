@@ -6,7 +6,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
     <script src="./firebase.js"></script>
-    <script src="./script.js"></script>
+    <script src="./newProduct.js"></script>
     </head>
     </head>
     <body>
@@ -27,11 +27,11 @@
             <div class="card1">
                 <h1 class="h1">NEW Product</h1>
                 <form>
-                    <input type="text"name="name" class="input" placeholder=" Product Name">
-                    <input type="./"name="name" class="URL" placeholder=" Image">
-                    <input type="number"name="name" class="NUMBER" placeholder=" Price">
-                    <input type="text"name="name" class="TEXT" placeholder=" Description">
-                     <button>ADD</button>
+                    <input id="name" type="text" name="name" class="input" placeholder="Product Name">
+                    <input id="image" type="./" name="name" class="URL" placeholder="Image">
+                    <input id ="price" type="number" name="name" class="NUMBER" placeholder="Price">
+                    <input id="description" type="text" name="name" class="TEXT" placeholder="Description">
+                     <button type="button" onclick=addItem()>ADD</button>
                 </form>
                 
             </div>
