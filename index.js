@@ -20,7 +20,7 @@ function generateItems(items){
             <img src=${item.image}>
         </div>
         <div class="Item-text">
-            <h1>${item.product}</h1>
+            <h1>${item.name}</h1>
         <p class="price">&#8377; ${item.price}</p>
         <p>${item.description}</p>
         </div>
