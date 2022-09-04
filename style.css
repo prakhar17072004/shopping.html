@@ -35,20 +35,13 @@ nav ul li{
     color:black;
 
 }
-.container{
+.products{
     margin-top: 50px;
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 100px 100px 100px;
     margin-bottom:50px;
-}
-.container-1{
-  margin-top: 50px;
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: 1000px 1000px 1000px;
-  margin-bottom:50px;
-}
+
 .price {
     color: grey;
     font-size: 22px;
