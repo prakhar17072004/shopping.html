@@ -37,12 +37,15 @@ nav ul li{
 
 }
 .products{
-    margin-top: 50px;
-    display:flex;
+   margin-top: 50px;
+    display:grid;
     max-width:30px;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap:70px;
+    row-gap:350px;
     grid-template-rows: 50px 100px  100px;
-    margin-rigth:30px;
+    margin-right:30px;
+    margin-left:50px;
 }
 
 .price {
