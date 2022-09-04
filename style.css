@@ -40,6 +40,7 @@ nav ul li{
    margin-top: 50px;
     display:grid;
     max-width:30px;
+    width:100%;
     grid-template-columns:1fr 1fr 1fr ;
     column-gap:100px;
     row-gap:400px;
