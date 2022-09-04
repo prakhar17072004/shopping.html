@@ -4,7 +4,7 @@ function addItem(){
     let price =document.getElementById("price").value;
     let description =document.getElementById("description").value;
     db.collection("shopping-web").add({
-        product: name,
+        name: name,
         image: image,
         price:price,
         description:description
