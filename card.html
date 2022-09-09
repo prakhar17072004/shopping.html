@@ -1,66 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-       <link rel="stylesheet" href="style.css">
-       <script src="./card.js"></script>
-    </head>
-    <body>
-        <div class="navbar">
-         <div class="logo" >
-              SHOPPING.COM
-          </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">All Products</a></li>
-                    
-                <li><a href="">Cart &#x1F6D2;</a></li>
-                    
-                    
-            </ul>
-        </nav>
-        
-         <!--cart -->
- <div class="cart-container">
-    <div class="cart" >
-        <h2 class="cart-title">CART</h2>
-        <!--content-->
-            <div class="cart-content">
-               <div class="cart-box">
-                    <img src = images/download-1.jpeg class="cart-img">
-                    <div class="Item-detail">
-                         <div class="cart-product-title">Maggie</div>
-                         <div class="cart-price">$ 7</div>
-                        <input type="number"  value="1" class="cart-quantity">
-                    </div>
-                    <!--remove-->
-                    <i class="cart-remove">remove</i>
-               </div>
-            </div>  
-            <!--content-->
-            <div class="cart-content">
-                <div class="cart-box">
-                     <img src = images/download-1.jpeg class="cart-img">
-                     <div class="Item-detail">
-                          <div class="cart-product-title">Maggie</div>
-                          <div class="cart-price">$ 7.2345</div>
-                         <input type="number"  value="1" class="cart-quantity">
-                     </div>
-                     <!--remove-->
-                     <i class="cart-remove">remove</i>
-                </div>
-             </div>  
-            <!--total-->   
-            <div class="total">
-                <div class="total-title"> Total</div>
-                <div class="total-price">$ 0 </div>
-            </div> 
-            <!--buy-button-->
-            <button type="button" class="btn-buy">BUY NOW</button>  
-                  
-    </div>
- </div>        
- 
-    </body>   
-    
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+		<script src="./firebase.js"></script>
+		<script src="./card.js"></script>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="logo">SHOPPING.COM</div>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="./index.html">All Products</a></li>
+
+				<li><a href="./newProduct.html">New Product</a></li>
+			</ul>
+		</nav>
+
+		<!--cart -->
+		<div class="cart-container"></div>
+	</body>
 </html>
