@@ -12,9 +12,18 @@ function getItems() {
 }
 
 function generateItems(items) {
-	console.log(items[0]);
 	let itemsHMTL = '';
+	let totalprice = 0;
+	 let totalItems = 0;
+
+	 
+	 
 	items.forEach((item) => {
+		totalprice += Number(item.price) ;
+		totalItems = totalItems + 1;
+		
+	 
+
 		itemsHMTL += `
                <div class="cart-box">
                    <img src = ${item.image} class="cart-img">
@@ -26,7 +35,11 @@ function generateItems(items) {
                </div>   
         `;
 	});
-	document.querySelector('.cart-container').innerHTML = itemsHMTL;
+	
+	document.querySelector('.total-price').innerHTML = totalprice;
+	document.querySelector('.cart-content').innerHTML = itemsHMTL;
+	
+	
 }
 
 getItems();
@@ -35,11 +48,17 @@ getItems();
 
 function removeItemFromCart(id){
 db.collection('cart-web').doc(`${id}`).delete().then(() => {
-    console.log("Document successfully deleted!");
+    
 	getItems();
 }).catch((error) => {
     console.error("Error removing document: ", error);
 });
+
 }
 	
-	
+
+ 
+
+
+
+ 
