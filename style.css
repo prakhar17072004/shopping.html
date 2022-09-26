@@ -15,29 +15,40 @@
     border:1px solid;
     border-radius:5px;
 }
-
+header{
+  display: flex;
+  border : 4px solid red;
+  background-color:bisque;
+  
+}
 .navbar{
     display:flex;
     align-items:center;
+    
     padding:10px;
-
+    position:fixed;
+    top:0;
 }
 nav{
     flex:1;
     text-align: right;
+  
 }
 nav ul{
     display:inline-block;
     list-style-type: none;
+  
 }
 nav ul li{
     display:inline-block;
-    margin-right: 20px;
+    margin-right: 30px;
     color:black;
-
+    
+    margin-top :20px;
+    
 }
 .products{
-   margin-top: 50px;
+   margin-top: 200px;
     display:grid;
     max-width:30px;
     width:100%;
@@ -61,6 +72,15 @@ nav ul li{
 
 .card1{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 50px;
+    
+  }
+  .card2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
@@ -68,7 +88,6 @@ nav ul li{
     margin-bottom: 50px;
     position:relative;
   }
-  
     
   
    button{
@@ -113,6 +132,30 @@ nav ul li{
     margin-bottom:50px;
     padding-bottom:100px;
   }
+  .cart-content{
+    
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 80px;
+    width:100%;
+    width:400px;
+    column-gap:100px;
+    
+    
+    margin-right:100px;
+    margin-left:200px;
+  }
+  .cart-box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 50px;
+    position:relative;
+  }
   /*.card3{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -120,14 +163,19 @@ nav ul li{
     text-align: center;
     font-family: arial;
     
+  }*/
+  .total{
+    display: flex;
+    border-top: 2px solid red;
+    font-weight: bold;
+    font-size:2rem;
+    justify-content:space-between;
   }
-  
-
-
-
-
-
-
-
-  
-   
+ .total-title{
+  margin-left: 10px;
+ }
+  .total-price{
+    display:flex;
+    justify-content:flex-end;
+    margin-right: 1rem;
+  }
